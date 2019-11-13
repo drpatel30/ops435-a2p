@@ -1,0 +1,87 @@
+--> Define a class named Date. 
+
+--> modify all the current functions so that they can be used as the methods.
+
+--> Define __init__ method to assign attibutes to the object being created.  
+
+--> Define __str__ method to reference object when string operation are performed. i.e. printing
+
+--> Define __repr__ method to represent the object when its being called. 
+
+--> define __add__ method to define addition operation performed on two Date objects. 
+    
+-->  define __sub__ method to support '-' (substraction operation) on two Date objects.
+
+--> take the date using self attributes. 
+
+--> method to check if the year is leap year or not.
+
+--> method to store max days of months after checking leap year(i.e. february has 29 days in leap year)
+
+--> create a method to return 1 day after the date entered
+
+    --> check if date is valid.
+
+    --> store values of days month and year to use in the function
+
+    --> increse the day by one
+
+    --> check if it exceeds the maximum days for the given month or not
+
+    --> if yes: increase month by one
+
+    --> set date to 1(i.e. start of a new month)
+
+    --> check if the month does not exceed 12 (max number of months in a year)
+
+        --> if yes: increase year by one:
+
+        --> set the month to 1 (i.e. start of the new year)
+
+    --> if not: month and year stays same
+
+    --> join the days month and year by converting them to string and padding necessary zeros
+
+    --> return the caculated value for next day obtained from above step
+
+--> Create a method to return 1 day before the date entered
+
+    -->check if date is valid.
+
+    --> store values of days month and year to use in the function
+
+    --> decrese the day by one
+
+    --> check if date is not zero(i.e. lowest possible value 1 has reached)
+
+    --> if date is zero decrease the month by 1
+
+    --> check if the month is not zero(i.e. lowest possible value 1 has reached)
+
+        --> if the month is zero set the month to 12 (max month for previous year)
+
+        --> decrease year by one(previous year)
+
+        --> if the month is not zero year stays same
+
+        --> set the days accordingly
+
+            (if the date goes below zero month should decrease and if the month goes below year decrease)
+
+        --> if the month is not zero do not change month and year 
+
+    --> join the days month and year by converting them to string and padding necessary zeros
+
+    --> return the caculated value for next day obtained from above step
+
+--> create a method to calculate days from epoch date. 
+   
+   --> subtract1970 from  the year  and calculate days according to leap year calculations.
+   
+   --> calculate the days of months remaining
+   
+   --> add the date to days calculated before
+   
+--> create a method to calculate day of week using above method and referencing EPOCH 
+
+
