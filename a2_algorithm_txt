@@ -8,7 +8,7 @@
 
 --> Define __repr__ method to represent the object when its being called. 
 
---> define __add__ method to define addition operation performed on two Date objects. 
+--> define __add__ method to Support '+' (addition operation) performed on two Date objects. 
     
 -->  define __sub__ method to support '-' (substraction operation) on two Date objects.
 
